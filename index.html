@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+</head>
+
+<body>
+    <header class="box">
+        <div class="box headerLogo">
+            <img src="/img/logo.svg" alt="logo">
+            <img src="/img/baslik.svg" alt="baslik" class="baslik">
+        </div>
+
+        <!-- Wrap your existing navigation items in a container div -->
+        
+        <div class="box headerNav">
+            <ul>
+                <li class="dropdown">
+                    <a href="#contact" class="dropbtn">Aksiyon</a>
+                    <div class="dropdown-content">
+                        <a href="#">Önerdilerimiz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact" class="dropbtn">Komedi</a>
+                    <div class="dropdown-content">
+                        <a href="#">Önerdilerimiz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact" class="dropbtn">Korku</a>
+                    <div class="dropdown-content">
+                        <a href="#">Önerdilerimiz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact" class="dropbtn">Aşk</a>
+                    <div class="dropdown-content">
+                        <a href="#">Önerdilerimiz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact" class="dropbtn">Bilim Kurgu</a>
+                    <div class="dropdown-content">
+                        <a href="#">Önerdilerimiz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact" class="dropbtn">Animasyon</a>
+                    <div class="dropdown-content">
+                        <a href="#">Önerdilerimiz</a>
+                    </div>
+                </li>
+                <li style="float:right"><a class="active" href="#about">Hakkımızda</a></li>
+            </ul>
+        </div>
+
+        <form style="display: flex; flex-wrap: nowrap; align-items: center; gap: 1rem" class="input">
+            <input name="search" type="text" placeholder="Film ismi giriniz...">
+            <button>Arama Yap</button>
+        </form>
+
+        <button class="mobile-menu-btn">&#9776; Kategoriler</button>
+
+        <div class="box mobileNav">
+            <ul>
+                <li><a href="#">Aksiyon</a></li>
+                <li><a href="#">Komedi</a></li>
+                <li><a href="#">Korku</a></li>
+                <li><a href="#">Aşk</a></li>
+                <li><a href="#">Bilim Kurgu</a></li>
+                <li><a href="#">Animasyon</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="backMain box">
+            <div class="col">
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="card box">
+                    <div class="cardImg ">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/f/fe/Kutsal_Damacana_4.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <b>Kutsal Damacana 4</b>
+                        <p>Yanlışlıkla rahip olan Fikret'in hikayesini anlatıyor. Fikret, tesadüfen girdiği rahiplik
+                            yolunda kendini tahmin edilemez bir konumda bulur. Beklenmedik bir şekilde Vatikan'a
+                            yükselen Fikret, artık memleketine dönmeye karar verir.</p>
+                    </div>
+                    <div class="cardButton">
+                        <button>İndir</button>
+                        <button onclick="openPopup('https://www.youtube.com/embed/HphAPON03o8')">İzle</button>
+                    </div>
+                </div>
+
+
+                <div class="card box">
+                    <div class="cardImg ">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/f/fd/Kolpa%C3%A7ino_4_4%27l%C3%BCk.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardText">
+                        <b>Kolpaçino 4</b>
+                        <p>Kolpaçino filminin devam halkası olan komedi türündeki "Kolpaçino 4 4'lük", önceki
+                            hikayelerde kendisine kazık atan eski dostlarıyla hesaplaşmaya karar veren Özgür’ün
+                            hikayesini konu ediyor. Yönetmen koltuğunda Kamil Çetin'in oturduğu filmin senaryosunu Şafak
+                            Sezer kaleme alıyor.</p>
+                    </div>
+                    <div class="cardButton">
+                        <button>İndir</button>
+                        <button onclick="openPopup('https://www.youtube.com/embed/72wlffFUamk')">İzle</button>
+                    </div>
+                </div>
+
+                <div class="card box">
+                    <div class="cardImg ">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/1/13/Recep%C4%B0vedik7.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <b>Recep İvedik 7</b>
+                        <p>Recep İvedik 7, şehir hayatındaki kaos ve ekonomik sıkıntılardan bunalan Recep'in, en yakın
+                            arkadaşı Nurullah ile birlikte babaannesinden miras kalan köye gitme kararını konu alır.
+                            Ancak köyde ortaya çıkan bir projenin köy ve ormanlara zarar vereceğini öğrenen Recep, komik
+                            ve heyecanlı bir maceraya atılır, köylülerle birlikte projeyi engellemeye çalışır.</p>
+                    </div>
+                    <div class="cardButton">
+                        <button>İndir</button>
+                        <button onclick="openPopup('https://www.youtube.com/embed/4oBmtMA9RtI')">İzle</button>
+                    </div>
+                </div>
+                <div class="card box">
+                    <div class="cardImg ">
+                        <img src="https://upload.wikimedia.org/wikipedia/tr/1/13/Recep%C4%B0vedik7.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <b>Recep İvedik 7</b>
+                        <p>Recep İvedik 7, şehir hayatındaki kaos ve ekonomik sıkıntılardan bunalan Recep'in, en yakın
+                            arkadaşı Nurullah ile birlikte babaannesinden miras kalan köye gitme kararını konu alır.
+                            Ancak köyde ortaya çıkan bir projenin köy ve ormanlara zarar vereceğini öğrenen Recep, komik
+                            ve heyecanlı bir maceraya atılır, köylülerle birlikte projeyi engellemeye çalışır.</p>
+                    </div>
+                    <div class="cardButton">
+                        <button>İndir</button>
+                        <button onclick="openPopup('https://www.youtube.com/embed/4oBmtMA9RtI')">İzle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="telegram-link">
+        <a href="https://t.me/your_telegram_channel" target="_blank">
+            <img src="/img/telegram-icon.png" alt="Telegram">
+        </a>
+    </div>
+
+
+    <footer>
+        <div>
+            <p>®Bu websitesi <a href="">anonbey</a> tarafından yapılmıştır. Dayıya selam olsun.®</p>
+        </div>
+    </footer>
+
+    <script>
+        function openPopup(videoUrl) {
+            var popup = document.getElementById("popup");
+            var iframe = document.querySelector("#popup iframe");
+            iframe.src = videoUrl; // İframe'e video URL'sini set edin
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            var iframe = document.querySelector("#popup iframe");
+            iframe.src = ""; // İframe'i temizle
+            popup.style.display = "none";
+        }
+    </script>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            var headerNav = document.querySelector('.headerNav');
+            headerNav.classList.toggle('open');
+        });
+    </script>
+    
+</body>
+
+</html>

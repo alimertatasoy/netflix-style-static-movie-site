@@ -1,0 +1,121 @@
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerLogo {
+        width: 80%;
+    }
+
+    .headerLogo img {
+        width: 5%;
+    }
+
+    .headerLogo .baslik {
+        width: 80%;
+    }
+
+    .input {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .input button {
+        width: 30%;
+        height: 4vh;
+    }
+
+    .input input {
+        width: 100%;
+        height: 4vh;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .cardText {
+        width: 100%;
+    }
+
+    .cardButton {
+        width: 100%;
+    }
+
+    .cardButton button {
+        width: 40%;
+        height: 6vh;
+    }
+
+    .backMain {
+        width: 90%;
+    }
+
+    .popup-content {
+        padding: 20px;
+    }
+
+    footer div {
+        width: 100%;
+    }
+    /* Add this CSS for the mobile menu */
+    .headerNav{
+        display: none;
+    }
+.mobileNav {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.mobileNav.open {
+    display: block;
+    max-height: 500px; /* You can adjust this value based on your menu content */
+}
+
+.mobileNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobileNav li {
+    text-align: center;
+    padding: 10px;
+}
+
+.mobileNav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.mobileNav a:hover {
+    background-color: #333;
+}
+
+/* Adjust this part based on your existing mobile menu button styling */
+.mobile-menu-btn {
+    display: block;
+    margin-top: 10px;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.mobile-menu-btn:focus+.mobileNav {
+    max-height: 500px; /* You can adjust this value based on your menu content */
+}
+
+
+}

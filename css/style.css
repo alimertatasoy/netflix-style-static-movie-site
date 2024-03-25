@@ -1,0 +1,332 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    /* Sayfa arka plan rengi */
+    background-color: #000;
+    /* Metin rengi */
+}
+
+.box {
+    padding: 15px;
+    border-color: white;
+}
+
+header {
+    width: 90%;
+    margin-top: 15px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ba2a22c5;
+    /* Başlık arka plan rengi */
+    color: #fff;
+    /* Başlık metin rengi */
+}
+
+.headerLogo {
+    width: 15%;
+    display: flex;
+}
+
+.headerLogo .baslik {
+    width: 70%;
+}
+
+.headerLogo img {
+    width: 30%;
+}
+
+.input {
+    position: relative;
+    overflow: hidden;
+}
+
+.input input,
+.input button {
+    height: 5vh;
+    transition: box-shadow 0.6s, background-color 0.6s;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+}
+
+.input button:hover {
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #302b27; /* Değiştirmek istediğiniz rengi burada belirtin */
+    color: #fff; /* Yazı rengini değiştirmek istiyorsanız burada belirtin */
+}
+
+
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backMain {
+    width: 90%;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    background-color: #302b27;
+}
+
+.card {
+    width: 25%;
+    margin-left: 7.5vh;
+    margin-top: 2.6vh;
+    border-radius: 15px;
+    background-color: #ffffffb3;
+    color: #333;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    /* Kartın üzerine gelince gölgelendirme ekleniyor */
+    transform: scale(1.05);
+    /* Kartın üzerine gelince bir miktar büyüme ekleniyor */
+}
+
+.card img {
+    width: 70%;
+}
+
+.card Img {
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cardText {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card p{
+    font-size: 1.5vh;
+}
+
+.cardButton {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cardButton button {
+    width: 45%;
+    height: 6vh;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 15px;
+    background-color: #ba2a22;
+    /* Kart düğme arka plan rengi */
+    color: #fff;
+    /* Kart düğme metin rengi */
+    border-style: none;
+}
+
+.cardButton button:hover {
+    /* Change to your desired hover background color */
+    color: #ffffff;
+    /* Change to your desired hover text color */
+    transform: scale(1.1);
+    /* Change to your desired scaling factor */
+    border-radius: 10px;
+    background-color: #c03a2bb7;
+    /* Kart düğme hover arka plan rengi */
+    color: #fff;
+    /* Kart düğme hover metin rengi */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
+}
+
+/* ... (diğer stiller) ... */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 50px;
+    /* Increase padding for a larger popup */
+    border-radius: 10px;
+    max-width: 90%;
+    /* Adjust maximum width as needed */
+    max-height: 90%;
+    /* Adjust maximum height as needed */
+    width: 120vh;
+    height: 70vh;
+    overflow: auto;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.telegram-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0088cc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+    transition: background-color 0.3s;
+    /* Add transition for smooth color change */
+}
+
+/* Styles for the Telegram link on hover */
+.telegram-link:hover {
+    background-color: #000000;
+    /* Change the background color on hover */
+}
+
+/* Rotate the Telegram icon on hover */
+.telegram-link:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    /* Add transition for smooth rotation */
+}
+
+.telegram-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.telegram-link img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    /* Add transition for smooth rotation */
+}
+.mobileNav{
+    display: none;
+}
+.headerNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 15px;
+}
+
+.headerNav li {
+    float: left;
+    font-size: 2vh;
+}
+
+.headerNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.headerNav li a:hover:not(.active) {
+    background-color: rgba(186, 64, 64, 0.959);
+    box-shadow: 0 0 10px rgba(186, 64, 64, 0.5); /* Add a slight box-shadow effect on hover */
+}
+
+.headerNav .active {
+    background-color: #c03a2b;
+}
+.headerNav .dropdown {
+    display: inline-block;
+}
+
+.headerNav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.headerNav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.headerNav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.headerNav .dropdown:hover .dropbtn {
+    background-color: rgba(186, 64, 64, 0.959);
+    box-shadow: 0 0 10px rgba(186, 64, 64, 0.5);
+}
+
+footer div{
+    width: 90%;
+    background-color: #ba2a226a;
+    padding: 1px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: #fefefe;
+    text-align: center;
+    font-size: 2vh;
+}
+footer a{
+    color: #f0f0f0;
+}
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
